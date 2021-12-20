@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+@use "sass:map";
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    @media screen and (min-width: map.get($breakpoints, sm)) {
+        padding: 34px 40px;
+    }
+}
+
+.header-link-list {
+    @media screen and (min-width: map.get($breakpoints, sm)) {
+        width: 467px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header-link {
+    color: map.get($colors, "text", 100);
+}

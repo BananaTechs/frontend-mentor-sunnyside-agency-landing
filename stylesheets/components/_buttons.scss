@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+@use "sass:map";
+
+.button-contact {
+    width: 140px;
+    height: 56px;
+    border-radius: 28px;
+    border-style: none;
+    font: 100% "Fraunces", serif;
+    text-transform: uppercase;
+    color: map.get($colors, "text", 500);
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease;
+
+    &:hover {
+        color: map.get($colors, "text", 100);
+        background-color: hsl(0, 100%, 100%, 25.37%);
+    }
+}

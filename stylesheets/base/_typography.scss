@@ -1,5 +1,21 @@
-h1 {
+@use "../abstracts" as *;
+@use "sass:map";
 
+html {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 112.5%;
+}
+
+h1 {
+    font: 900 250% "Fraunces", serif;
+    letter-spacing: 0.7rem;
+    color: white;
+    text-transform: uppercase;
+
+    @media screen and (min-width: map.get($breakpoints, sm)) {
+        font-size: 350%;
+    }
 }
 
 h2 {

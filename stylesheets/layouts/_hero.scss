@@ -1,0 +1,29 @@
+@use "../abstracts" as *;
+@use "sass:map";
+
+.section-hero {
+    position: relative;
+    text-align: center;
+
+    @media screen and (min-width: map.get($breakpoints, "sm")) {
+    }
+}
+
+.section-hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.section-hero-h1 {
+    margin: 5vw 10% 0;
+}
+
+.section-hero-arrow {
+    margin-top: 5vw;
+}
+
+.img-hero {
+    width: 100%;
+}

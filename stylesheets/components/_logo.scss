@@ -1,0 +1,10 @@
+@use "../abstracts" as *;
+@use "sass:map";
+
+.logo {
+    width: 124px;
+    
+    @media screen and (min-width: map.get($breakpoints, sm)) {
+        width: 170px;
+    }
+}

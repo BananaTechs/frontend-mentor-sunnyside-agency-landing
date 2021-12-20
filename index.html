@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="stylesheet" href="./stylesheets/main.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
@@ -19,28 +21,31 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="./images/logo.svg" alt="sunnyside logo">
-    <ul>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Services</a>
-      </li>
-      <li>
-        <a href="#">Projects</a>
-      </li>
-      <li>
-        <button type="button">Contact</button>
-      </li>
-    </ul>
-  </header>
-
   <main>
     <div class="section-hero">
-      <h1>We are creatives</h1>
-      <img src="./images/icon-arrow-down.svg" alt="downward arrow">
+      <img class="desktop img-hero" src="./images/desktop/image-header.jpg">
+      <img class="mobile img-hero" src="./images/mobile/image-header.jpg">
+      <div class="section-hero-content">
+        <header>
+          <img class="logo header-logo" src="./images/logo.svg" alt="sunnyside logo">
+          <ul class="header-link-list">
+            <li>
+              <a class="header-link" href="#">About</a>
+            </li>
+            <li>
+              <a class="header-link" href="#">Services</a>
+            </li>
+            <li>
+              <a class="header-link" href="#">Projects</a>
+            </li>
+            <li>
+              <button class="button-contact" type="button">Contact</button>
+            </li>
+          </ul>
+        </header>
+        <h1 class="section-hero-h1">We are creatives</h1>
+        <img class="section-hero-arrow" src="./images/icon-arrow-down.svg" alt="downward arrow">
+      </div>
     </div>
 
     Transform your brand
@@ -79,10 +84,21 @@
   </main>
 
   <footer>
+    <ul>
+      <li>
+
+      </li>
+      <li>
+        
+      </li>
+      <li>
+        
+      </li>
+    </ul>
     About
     Services
     Projects
-    Contact
+    
   </footer>
 
   <div class="attribution">
