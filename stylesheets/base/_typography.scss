@@ -8,12 +8,13 @@ html {
 }
 
 h1 {
-    font: 900 250% "Fraunces", serif;
-    letter-spacing: 0.7rem;
+    font: 900 220% "Fraunces", serif;
+    letter-spacing: 0.4rem;
     color: white;
     text-transform: uppercase;
 
     @media screen and (min-width: map.get($breakpoints, sm)) {
+        letter-spacing: 0.7rem;
         font-size: 350%;
     }
 }

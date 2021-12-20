@@ -6,6 +6,7 @@
     text-align: center;
 
     @media screen and (min-width: map.get($breakpoints, "sm")) {
+
     }
 }
 
@@ -17,11 +18,19 @@
 }
 
 .section-hero-h1 {
-    margin: 5vw 10% 0;
+    margin: 20vw 10% 0;
+
+    @media screen and (min-width: map.get($breakpoints, "sm")) {
+        margin: 5vw 10% 0;
+    }
 }
 
 .section-hero-arrow {
-    margin-top: 5vw;
+    margin-top: 10vw;
+
+    @media screen and (min-width: map.get($breakpoints, "sm")) {
+        margin-top: 5vw;
+    }
 }
 
 .img-hero {
