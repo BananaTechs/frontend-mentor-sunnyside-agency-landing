@@ -101,11 +101,6 @@ header {
   background-color: rgba(255, 255, 255, 0.2537);
 }
 
-.grid-col-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .section-hero {
   position: relative;
   text-align: center;
@@ -136,5 +131,20 @@ header {
 }
 
 .img-hero {
+  width: 100%;
+  height: auto;
+}
+
+.section-info {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .section-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section-info-img {
   width: 100%;
 }/*# sourceMappingURL=main.css.map */

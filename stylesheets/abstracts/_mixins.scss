@@ -1,0 +1,13 @@
+@use "sass:map";
+@use "breakpoints" as *;
+
+@mixin grid-col-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@mixin mq {
+    @media screen and (min-width: map.get($breakpoints, sm)) {
+        @content;
+    }
+}

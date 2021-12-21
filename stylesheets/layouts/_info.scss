@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.section-info {
+    width: 100%;
+
+    @include mq {
+        @include grid-col-2;
+    }
+}
+
+.section-info-img {
+    width: 100%;
+}
