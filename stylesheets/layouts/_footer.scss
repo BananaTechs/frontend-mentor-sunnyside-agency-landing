@@ -30,7 +30,7 @@ footer {
     height: 33px;
     margin: 0 auto;
     background-color: #2C7566;
-    mask: url("../../images/logo.svg") no-repeat;
+    mask: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/logo.svg) no-repeat;
     mask-size: 170px;
 }
 
@@ -72,19 +72,19 @@ footer {
     }
 
     &.facebook {
-        mask-image: url("../../images/icon-facebook.svg");
+        mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-facebook.svg);
     }
 
     &.twitter {
-        mask-image: url("../../images/icon-twitter.svg");
+        mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-twitter.svg);
     }
 
     &.instagram {
-        mask-image: url("../../images/icon-instagram.svg");
+        mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-instagram.svg);
     }
 
     &.pinterest {
-        mask-image: url("../../images/icon-pinterest.svg");
+        mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-pinterest.svg);
     }
 }
 

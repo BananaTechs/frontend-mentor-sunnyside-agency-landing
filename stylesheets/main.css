@@ -427,8 +427,8 @@ footer {
   height: 33px;
   margin: 0 auto;
   background-color: #2C7566;
-  -webkit-mask: url("../../images/logo.svg") no-repeat;
-          mask: url("../../images/logo.svg") no-repeat;
+  -webkit-mask: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/logo.svg) no-repeat;
+          mask: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/logo.svg) no-repeat;
   -webkit-mask-size: 170px;
           mask-size: 170px;
 }
@@ -471,20 +471,20 @@ footer {
   background-color: white;
 }
 .footer-social-link.facebook {
-  -webkit-mask-image: url("../../images/icon-facebook.svg");
-          mask-image: url("../../images/icon-facebook.svg");
+  -webkit-mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-facebook.svg);
+          mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-facebook.svg);
 }
 .footer-social-link.twitter {
-  -webkit-mask-image: url("../../images/icon-twitter.svg");
-          mask-image: url("../../images/icon-twitter.svg");
+  -webkit-mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-twitter.svg);
+          mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-twitter.svg);
 }
 .footer-social-link.instagram {
-  -webkit-mask-image: url("../../images/icon-instagram.svg");
-          mask-image: url("../../images/icon-instagram.svg");
+  -webkit-mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-instagram.svg);
+          mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-instagram.svg);
 }
 .footer-social-link.pinterest {
-  -webkit-mask-image: url("../../images/icon-pinterest.svg");
-          mask-image: url("../../images/icon-pinterest.svg");
+  -webkit-mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-pinterest.svg);
+          mask-image: url(https://raw.githubusercontent.com/BananaTechs/frontend-mentor-sunnyside-agency-landing/main/images/icon-pinterest.svg);
 }
 
 .attribution {
