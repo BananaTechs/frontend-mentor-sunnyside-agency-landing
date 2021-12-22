@@ -54,3 +54,34 @@
 .card-photography {
     color: map.get($colors, "main", darkBlue);
 }
+
+.card-testimonial {
+    height: 27rem;
+    padding: 3.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: map.get($colors, "text", 400);
+}
+
+.card-testimonial-image {
+    margin: 0 auto;
+    width: 4rem;
+    height: auto;
+    border-radius: 50%;
+    line-height: 1rem;
+}
+
+.card-testimonial-text {
+    line-height: 2rem;
+}
+
+.card-testimonial-id {
+    font-size: 0.8rem;
+    color: map.get($colors, "text", 200);
+
+    h5 {
+        margin-bottom: 0.7rem;
+    }
+}

@@ -9,26 +9,43 @@ html {
 }
 
 h1 {
-    font: 900 220% "Fraunces", serif;
+    font: 900 2.2rem "Fraunces", serif;
     letter-spacing: 0.4rem;
     color: map.get($colors, "text", 100);;
     text-transform: uppercase;
 
     @include mq {
         letter-spacing: 0.7rem;
-        font-size: 350%;
+        font-size: 3.5rem;
     }
 }
 
 h2 {
-    font: 900 200% "Fraunces", serif;
+    font: 900 2rem "Fraunces", serif;
     color: map.get($colors, "text", 500);
 
     @include mq {
-        font-size: 250%;
+        font-size: 2.5rem;
     }
 }
 
 h3 {
-    font: 900 150% "Fraunces", serif;
+    font: 900 1.5rem "Fraunces", serif;
+}
+
+h4 {
+    font: 900 0.9rem "Fraunces", serif;
+    color: map.get($colors, "text", 200);
+    text-transform: uppercase;
+    letter-spacing: 0.23rem;
+
+    @include mq {
+        font-size: 1.1rem;
+        letter-spacing: 0.27rem;
+    }
+}
+
+h5 {
+    font: 900 1rem "Fraunces", serif;
+    color: map.get($colors, "text", 500);
 }
