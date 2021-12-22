@@ -5,12 +5,13 @@ html {
     font-family: "Barlow", sans-serif;
     font-weight: 600;
     font-size: 112.5%;
+    color: map.get($colors, "text", 300);
 }
 
 h1 {
     font: 900 220% "Fraunces", serif;
     letter-spacing: 0.4rem;
-    color: white;
+    color: map.get($colors, "text", 100);;
     text-transform: uppercase;
 
     @include mq {
@@ -20,5 +21,14 @@ h1 {
 }
 
 h2 {
-    
+    font: 900 200% "Fraunces", serif;
+    color: map.get($colors, "text", 500);
+
+    @include mq {
+        font-size: 250%;
+    }
+}
+
+h3 {
+    font: 900 150% "Fraunces", serif;
 }

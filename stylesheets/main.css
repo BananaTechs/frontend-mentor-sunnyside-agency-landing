@@ -8,6 +8,7 @@ html {
   font-family: "Barlow", sans-serif;
   font-weight: 600;
   font-size: 112.5%;
+  color: #818498;
 }
 
 h1 {
@@ -21,6 +22,24 @@ h1 {
     letter-spacing: 0.7rem;
     font-size: 350%;
   }
+}
+
+h2 {
+  font: 900 200% "Fraunces", serif;
+  color: #23303e;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 250%;
+  }
+}
+
+h3 {
+  font: 900 150% "Fraunces", serif;
+}
+
+html {
+  text-align: center;
 }
 
 a {
@@ -102,6 +121,86 @@ header {
 .button-contact:hover {
   color: white;
   background-color: rgba(255, 255, 255, 0.2537);
+}
+
+.button-learn-more {
+  position: relative;
+  font: 900 100% "Fraunces", serif;
+  text-transform: uppercase;
+  color: #23303e;
+}
+.button-learn-more:hover:last-child {
+  opacity: 100%;
+}
+.button-learn-more .underline {
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  opacity: 25%;
+}
+
+.underline-yellow {
+  background-color: #fad400;
+}
+
+.underline-red {
+  background-color: #fe7867;
+}
+
+.card-solid {
+  padding: 10%;
+}
+@media screen and (min-width: 768px) {
+  .card-solid {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.card-solid-inner {
+  margin: 64px 0;
+}
+@media screen and (min-width: 768px) {
+  .card-solid-inner {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 500px;
+  }
+}
+.card-solid-inner p {
+  margin: 1.7rem 0;
+  line-height: 1.8rem;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image-text-container {
+  position: absolute;
+  width: 100%;
+  bottom: 5%;
+}
+
+.card-image-text {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5%;
+  line-height: 1.5rem;
+}
+.card-image-text h3 {
+  margin-bottom: 8%;
+}
+
+.card-graphic-design {
+  color: #25564b;
+}
+
+.card-photography {
+  color: #19536b;
 }
 
 .section-hero {

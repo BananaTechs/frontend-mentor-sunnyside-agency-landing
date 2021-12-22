@@ -1,6 +1,10 @@
 @use "../abstracts" as *;
 @use "sass:map";
 
+html {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
 }

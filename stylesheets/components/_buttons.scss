@@ -17,3 +17,37 @@
         background-color: hsl(0, 100%, 100%, 25.37%);
     }
 }
+
+.button-learn-more {
+    position: relative;
+    font: 900 100% "Fraunces", serif;
+    text-transform: uppercase;
+    color: map.get($colors, "text", 500);
+
+    &:hover {
+        &:last-child {
+            opacity: 100%;
+        }
+    }
+
+    .underline {
+        width: 100%;
+        height: 40%;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        opacity: 25%;
+
+        // &:hover {
+        //     opacity: 100%;
+        // }
+    }
+}
+
+.underline-yellow {
+    background-color: map.get($colors, "main", "mainYellow");
+}
+
+.underline-red {
+    background-color: map.get($colors, "main", "softRed");
+}
