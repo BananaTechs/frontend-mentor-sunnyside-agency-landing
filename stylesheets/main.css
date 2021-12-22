@@ -417,12 +417,18 @@ footer {
   width: 100%;
   max-width: 375px;
   margin: 0 auto;
+  padding-top: 64px;
 }
 
 .section-footer-logo {
   width: 170px;
-  padding-top: 64px;
-  fill: #25564b;
+  height: 33px;
+  margin: 0 auto;
+  background-color: #25564b;
+  -webkit-mask: url("../../images/logo.svg") no-repeat;
+          mask: url("../../images/logo.svg") no-repeat;
+  -webkit-mask-size: 170px;
+          mask-size: 170px;
 }
 
 .footer-link-list {
@@ -449,7 +455,7 @@ footer {
   align-items: center;
 }
 
-.footer-social-link img:hover {
+.footer-social-link img:path:hover {
   fill: white;
 }
 

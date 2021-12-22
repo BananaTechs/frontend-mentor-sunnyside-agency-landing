@@ -22,12 +22,16 @@ footer {
     width: 100%;
     max-width: 375px;
     margin: 0 auto;
+    padding-top: 64px;
 }
 
 .section-footer-logo {
     width: 170px;
-    padding-top: 64px;
-    fill: map.get($colors, "main", darkCyan);
+    height: 33px;
+    margin: 0 auto;
+    background-color: map.get($colors, "main", darkCyan);
+    mask: url("../../images/logo.svg") no-repeat;
+    mask-size: 170px;
 }
 
 .footer-link-list {
@@ -55,7 +59,7 @@ footer {
     align-items: center;
 }
 
-.footer-social-link img {
+.footer-social-link img:path {
     &:hover {
         fill: map.get($colors, "text", 100);
     }
