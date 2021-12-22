@@ -9,12 +9,17 @@
     font: 100% "Fraunces", serif;
     text-transform: uppercase;
     color: map.get($colors, "text", 500);
+    background: map.get($colors, "main", "mainYellow");
     cursor: pointer;
     transition: color 0.2s ease, background-color 0.2s ease;
 
-    &:hover {
-        color: map.get($colors, "text", 100);
-        background-color: hsl(0, 100%, 100%, 25.37%);
+    @include mq {
+        background: map.get($colors, "text", 100);
+
+        &:hover {
+            color: map.get($colors, "text", 100);
+            background-color: hsl(0, 100%, 100%, 25.37%);
+        }
     }
 }
 

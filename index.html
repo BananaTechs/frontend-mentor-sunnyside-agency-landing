@@ -22,21 +22,27 @@
       <img class="mobile img-hero" src="./images/mobile/image-header.jpg">
       <div class="section-hero-content">
         <header>
-          <img class="logo header-logo" src="./images/logo.svg" alt="sunnyside logo">
-          <ul class="header-link-list">
-            <li>
-              <a class="header-link" href="#">About</a>
-            </li>
-            <li>
-              <a class="header-link" href="#">Services</a>
-            </li>
-            <li>
-              <a class="header-link" href="#">Projects</a>
-            </li>
-            <li>
-              <button class="button-contact" type="button">Contact</button>
-            </li>
-          </ul>
+          <div class="header-container">
+            <img class="logo header-logo" src="./images/logo.svg" alt="sunnyside logo">
+            <img class="mobile hamburger" id="hamburger" src="./images/icon-hamburger.svg" alt="hamburger menu">
+            <div class="header-menu" id="header-menu">
+              <div class="triangle"></div>
+              <ul class="header-link-list">
+                <li>
+                  <a class="header-link" href="#">About</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#">Services</a>
+                </li>
+                <li>
+                  <a class="header-link" href="#">Projects</a>
+                </li>
+                <li>
+                  <button class="button-contact" type="button">Contact</button>
+                </li>
+              </ul>
+            </div>
+          </div>
         </header>
         <h1 class="section-hero-h1">We are creatives</h1>
         <img class="section-hero-arrow" src="./images/icon-arrow-down.svg" alt="downward arrow">
@@ -200,6 +206,8 @@
       Coded by <a href="https://github.com/BananaTechs" target="_blank">Thomas Hogben (BananaTechs)</a>.
     </div>
   </footer>
+
+  <script src="./index.js"></script>
 
 </body>
 </html>
