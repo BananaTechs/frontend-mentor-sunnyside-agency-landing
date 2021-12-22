@@ -121,9 +121,6 @@ ul {
   text-transform: uppercase;
   color: #23303e;
 }
-.button-learn-more:hover:last-child {
-  opacity: 100%;
-}
 .button-learn-more::after {
   content: "";
   width: 7.3rem;

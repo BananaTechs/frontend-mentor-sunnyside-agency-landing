@@ -29,12 +29,6 @@
     text-transform: uppercase;
     color: map.get($colors, "text", 500);
 
-    &:hover {
-        &:last-child {
-            opacity: 100%;
-        }
-    }
-
     &::after {
         content: "";
         width: 7.3rem;
@@ -60,11 +54,3 @@
         background-color: map.get($colors, "main", "softRed");
     }
 }
-
-// .underline-yellow {
-//     background-color: map.get($colors, "main", "mainYellow");
-// }
-
-// .underline-red {
-//     background-color: map.get($colors, "main", "softRed");
-// }
