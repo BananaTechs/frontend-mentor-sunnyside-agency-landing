@@ -30,7 +30,6 @@ header {
 }
 
 .header-menu {
-    // display: none;
     width: 100%;
     height: 0;
     opacity: 0%;
@@ -40,7 +39,6 @@ header {
     transition: height 0.5s ease, opacity 0.5s ease;
 
     &.show {
-        // display: initial;
         opacity: 100%;
         height: 320px;
     }
@@ -98,7 +96,7 @@ header {
         color: map.get($colors, "text", 100);
 
         &:hover {
-            color: hsl(0, 100%, 100%, 25.37%);
+            opacity: 25%;
         }
     }
 }

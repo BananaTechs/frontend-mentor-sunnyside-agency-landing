@@ -18,7 +18,7 @@
 
         &:hover {
             color: map.get($colors, "text", 100);
-            background-color: hsl(0, 100%, 100%, 25.37%);
+            background-color: hsl(0, 100%, 100%, 25%);
         }
     }
 }
@@ -35,24 +35,36 @@
         }
     }
 
-    .underline {
-        width: 100%;
-        height: 40%;
+    &::after {
+        content: "";
+        width: 7.3rem;
+        height: 0.5rem;
+        border-radius: 0.15rem;
         position: absolute;
         bottom: 0;
+        left: 0;
         z-index: -1;
         opacity: 25%;
+        transition: opacity 0.2s ease;
+    }
 
-        // &:hover {
-        //     opacity: 100%;
-        // }
+    &:hover::after {
+        opacity: 100%;
+    }
+
+    &.underline-yellow::after {
+        background-color: map.get($colors, "main", "mainYellow");
+    }
+
+    &.underline-red::after {
+        background-color: map.get($colors, "main", "softRed");
     }
 }
 
-.underline-yellow {
-    background-color: map.get($colors, "main", "mainYellow");
-}
+// .underline-yellow {
+//     background-color: map.get($colors, "main", "mainYellow");
+// }
 
-.underline-red {
-    background-color: map.get($colors, "main", "softRed");
-}
+// .underline-red {
+//     background-color: map.get($colors, "main", "softRed");
+// }

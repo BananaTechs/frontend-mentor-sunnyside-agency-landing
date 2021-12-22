@@ -111,7 +111,7 @@ ul {
   }
   .button-contact:hover {
     color: white;
-    background-color: rgba(255, 255, 255, 0.2537);
+    background-color: rgba(255, 255, 255, 0.25);
   }
 }
 
@@ -124,20 +124,25 @@ ul {
 .button-learn-more:hover:last-child {
   opacity: 100%;
 }
-.button-learn-more .underline {
-  width: 100%;
-  height: 40%;
+.button-learn-more::after {
+  content: "";
+  width: 7.3rem;
+  height: 0.5rem;
+  border-radius: 0.15rem;
   position: absolute;
   bottom: 0;
+  left: 0;
   z-index: -1;
   opacity: 25%;
+  transition: opacity 0.2s ease;
 }
-
-.underline-yellow {
+.button-learn-more:hover::after {
+  opacity: 100%;
+}
+.button-learn-more.underline-yellow::after {
   background-color: #fad400;
 }
-
-.underline-red {
+.button-learn-more.underline-red::after {
   background-color: #fe7867;
 }
 
@@ -323,7 +328,7 @@ header {
     color: white;
   }
   .header-link:hover {
-    color: rgba(255, 255, 255, 0.2537);
+    opacity: 25%;
   }
 }
 
