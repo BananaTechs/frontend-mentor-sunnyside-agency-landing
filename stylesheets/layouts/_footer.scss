@@ -2,7 +2,7 @@
 @use "sass:map";
 
 footer {
-    background-color: map.get($colors, "main", "moderateCyan");
+    background-color: #90D4C6;
     text-align: center;
 }
 
@@ -22,13 +22,12 @@ footer {
     width: 100%;
     max-width: 375px;
     margin: 0 auto;
-    // padding: 10% 10%;
 }
 
 .section-footer-logo {
     width: 170px;
     padding-top: 64px;
-    color: map.get($colors, "main", darkCyan);
+    fill: map.get($colors, "main", darkCyan);
 }
 
 .footer-link-list {
@@ -40,7 +39,7 @@ footer {
 }
 
 .footer-link {
-    color: map.get($colors, "main", darkCyan);
+    color: map.get($colors, "main", "moderateCyan");
 
     &:hover {
         color: map.get($colors, "text", 100);
@@ -57,19 +56,24 @@ footer {
 }
 
 .footer-social-link img {
-
-
     &:hover {
         fill: map.get($colors, "text", 100);
     }
 }
 
 .attribution {
+    width: 80%;
+    margin: 0 auto;
     font-size: 11px;
+    padding-bottom: 1rem;
     text-align: center;
-    color: map.get($colors, "main", darkCyan);
+    color: map.get($colors, "main", "moderateCyan");
 
     a {
-        color: map.get($colors, "text", 100);
+        color: map.get($colors, "main", darKCyan);
+
+        &:hover {
+            color: map.get($colors, "text", 100);
+        }
     }
 }   
