@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     padding: 32px 24px;
 
-    @media screen and (min-width: map.get($breakpoints, sm)) {
+    @include mq {
         padding: 34px 40px;
     }
 }
@@ -16,7 +16,7 @@ header {
 .header-link-list {
     display: none;
 
-    @media screen and (min-width: map.get($breakpoints, sm)) {
+    @include mq {
         display: initial;
         width: 467px;
         display: flex;
@@ -27,4 +27,8 @@ header {
 
 .header-link {
     color: map.get($colors, "text", 100);
+
+    &:hover {
+        color: hsl(0, 100%, 100%, 25.37%);
+    }
 }

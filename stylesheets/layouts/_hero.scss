@@ -4,10 +4,6 @@
 .section-hero {
     position: relative;
     text-align: center;
-
-    @media screen and (min-width: map.get($breakpoints, "sm")) {
-
-    }
 }
 
 .section-hero-content {
@@ -20,7 +16,7 @@
 .section-hero-h1 {
     margin: 20vw 10% 0;
 
-    @media screen and (min-width: map.get($breakpoints, "sm")) {
+    @include mq {
         margin: 5vw 10% 0;
     }
 }
@@ -28,7 +24,7 @@
 .section-hero-arrow {
     margin-top: 10vw;
 
-    @media screen and (min-width: map.get($breakpoints, "sm")) {
+    @include mq {
         margin-top: 5vw;
     }
 }
