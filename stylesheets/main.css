@@ -424,7 +424,7 @@ footer {
   width: 170px;
   height: 33px;
   margin: 0 auto;
-  background-color: #25564b;
+  background-color: #2C7566;
   -webkit-mask: url("../../images/logo.svg") no-repeat;
           mask: url("../../images/logo.svg") no-repeat;
   -webkit-mask-size: 170px;
@@ -455,8 +455,34 @@ footer {
   align-items: center;
 }
 
-.footer-social-link img:path:hover {
-  fill: white;
+.footer-social-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #2C7566;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 20px;
+          mask-size: 20px;
+}
+.footer-social-link:hover {
+  background-color: white;
+}
+.footer-social-link.facebook {
+  -webkit-mask-image: url("../../images/icon-facebook.svg");
+          mask-image: url("../../images/icon-facebook.svg");
+}
+.footer-social-link.twitter {
+  -webkit-mask-image: url("../../images/icon-twitter.svg");
+          mask-image: url("../../images/icon-twitter.svg");
+}
+.footer-social-link.instagram {
+  -webkit-mask-image: url("../../images/icon-instagram.svg");
+          mask-image: url("../../images/icon-instagram.svg");
+}
+.footer-social-link.pinterest {
+  -webkit-mask-image: url("../../images/icon-pinterest.svg");
+          mask-image: url("../../images/icon-pinterest.svg");
 }
 
 .attribution {

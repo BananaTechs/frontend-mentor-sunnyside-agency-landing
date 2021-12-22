@@ -29,7 +29,7 @@ footer {
     width: 170px;
     height: 33px;
     margin: 0 auto;
-    background-color: map.get($colors, "main", darkCyan);
+    background-color: #2C7566;
     mask: url("../../images/logo.svg") no-repeat;
     mask-size: 170px;
 }
@@ -59,9 +59,32 @@ footer {
     align-items: center;
 }
 
-.footer-social-link img:path {
+.footer-social-link {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color:#2C7566;
+    mask-repeat: no-repeat;
+    mask-size: 20px;
+
     &:hover {
-        fill: map.get($colors, "text", 100);
+        background-color: map.get($colors, "text", 100);
+    }
+
+    &.facebook {
+        mask-image: url("../../images/icon-facebook.svg");
+    }
+
+    &.twitter {
+        mask-image: url("../../images/icon-twitter.svg");
+    }
+
+    &.instagram {
+        mask-image: url("../../images/icon-instagram.svg");
+    }
+
+    &.pinterest {
+        mask-image: url("../../images/icon-pinterest.svg");
     }
 }
 
@@ -74,7 +97,7 @@ footer {
     color: map.get($colors, "main", "moderateCyan");
 
     a {
-        color: map.get($colors, "main", darKCyan);
+        color: map.get($colors, "main", darkCyan);
 
         &:hover {
             color: map.get($colors, "text", 100);
